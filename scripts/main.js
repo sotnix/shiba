@@ -1,4 +1,4 @@
-var myImg = document.querySelector('img');
+const myImg = document.querySelector('img');
 
 myImg.onclick = function() {
     var mySrc = myImg.getAttribute('src');
@@ -13,6 +13,15 @@ myImg.onclick = function() {
     }
 }
 
-var myButton = document.querySelector('button');
-var myHeading = document.querySelector('h1');
+let myButton = document.querySelector('button');
+myButton.setAttribute("boom")
+myButton.onclick = listInts()
+const myHeading = document.querySelector('h1');
 
+function listInts()
+{
+    for (i = 0 ; i <10; i++)
+    {
+        console.log(i)
+    }
+}
